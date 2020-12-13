@@ -1,0 +1,230 @@
+@import "../bootstrap-4.5.0/scss/functions";
+@import "../bootstrap-4.5.0/scss/variables";
+@import "../bootstrap-4.5.0/scss/mixins";
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.navbar {
+  padding: 0.8rem;
+
+  li {
+    padding-right: 20px;
+
+    .nav-link {
+      font-size: 1.1em;
+    }
+  }
+}
+
+.carousel-inner {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    h1 {
+      font-size: 500%;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 15px #000;
+    }
+
+    h3 {
+      font-size: 200%;
+      font-weight: 500;
+      text-shadow: 1px 1px 10px #000;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.btn-primary {
+  background: #6648b1;
+  border: 1px solid #6648b1;
+
+  &:hover {
+    background: #563d7c;
+    border: 1px solid #563d7c;
+  }
+}
+
+.jumbotron {
+  padding: 1rem;
+  border: 0;
+}
+
+.padding {
+  padding: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+
+  hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.bi-type-bold {
+  color: #6648b1;
+}
+
+.bi {
+  margin: 1rem;
+}
+
+.figure {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.fun {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border: 1px solid grey;
+}
+
+.fab {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  &:hover {
+    color: #d5d5d5;
+  }
+}
+
+.fa-twitter {
+  color: #00aced;
+
+  &:hover {
+    color: #d5d5d5;
+  }
+}
+
+.fa-google-plus {
+  color: #dd4b39;
+  &:hover {
+    color: #d5d5d5;
+  }
+}
+
+.fa-instagram {
+  color: #517fa4;
+  &:hover {
+    color: #d5d5d5;
+  }
+}
+
+.fa-youtube {
+  color: #bb0000;
+  &:hover {
+    color: #d5d5d5;
+  }
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+
+  hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  hr.light1 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+// md-size
+@media (max-width: 992px) {
+  .fab {
+    font-size: 4em;
+    padding: 2rem;
+  }
+
+  .p-extra{
+    margin-bottom: 1rem;
+}
+
+figure{
+    display:none
+}
+}
+
+// sm-size * till here already sufficient
+@media (max-width: 768px) {
+  .carousel-inner {
+    .carousel-caption {
+      top: 45%;
+
+      .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+
+      }
+
+      h1 {
+        font-size: 350%;
+      }
+
+      h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: 0.2rem;
+      }
+    }
+  }
+
+  .p-extra{
+      margin-bottom: 1rem;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .fab {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+  ol.carousel-indicators {
+    display: none;
+  }
+
+  .padding {
+    padding: 1rem;
+  }
+
+
+  figure{
+      display:none
+  }
+}
+
